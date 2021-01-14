@@ -46,6 +46,7 @@ s3fs \
   -o mp_umask=113 \
   -o uid=`id -u 'www-data'` \
   -o gid=`id -g 'www-data'` \
+  -o allow_other \
   $S3FS_ARGS \
   ${AWS_STORAGE_BUCKET_NAME} \
   ${AWS_S3_MOUNTPOINT}
